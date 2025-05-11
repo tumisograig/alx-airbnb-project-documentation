@@ -1,0 +1,73 @@
+# Task 4: Design a Flowchart for a Key System Process
+
+## Objective
+
+Visualize the step-by-step workflow of a core backend process in the Airbnb Clone project by creating a flowchart.
+
+## Chosen Process: User Registration
+
+This flowchart will illustrate how the system handles a new user registration, from receiving user input to storing the new user in the database.
+
+## Step-by-Step Instructions (Draw\.io)
+
+1. **Open Draw\.io**
+
+   * Go to [https://draw.io](https://draw.io).
+   * Click **Create New Diagram** → **Blank Diagram** → **Create**.
+
+2. **Enable Flowchart Shapes**
+
+   * In the left panel, click **More Shapes...**.
+   * Under **General**, check **Flowchart** and click **Apply**.
+
+3. **Add Start Symbol**
+
+   * Drag the **Terminator (Start/End)** shape onto the canvas.
+   * Label it **Start**.
+
+4. **Add Process Steps**
+
+   * Drag a **Process** (rectangle) shape.
+   * Label steps in order:
+
+     1. `Receive registration request`
+     2. `Validate input data`
+     3. `Check if email exists`
+     4. `Hash password`
+     5. `Create user record`
+
+5. **Add Decision Points**
+
+   * Drag a **Decision** (diamond) shape for the email check.
+   * Place between `Check if email exists` and next step.
+   * Label with **Email exists?** and draw two outgoing arrows labeled **Yes** and **No**.
+
+6. **Handle Outcomes**
+
+   * If **Yes**, connect to a **Process** step labeled `Return error: email already used`.
+   * If **No**, proceed to `Hash password`.
+
+7. **Add End Symbol**
+
+   * Drag another **Terminator** shape and label **End**.
+   * Connect it from the final step `Create user record` and from the email error path.
+
+8. **Connect Shapes**
+
+   * Use the **Connector** tool to draw arrows between shapes following the process flow.
+
+9. **Style & Arrange**
+
+   * Arrange vertically: Start at top, End at bottom.
+   * Use consistent arrow styles and shape sizes.
+
+10. **Export as PNG**
+
+* File → **Export As** → **PNG**.
+* Check **Include a copy of my diagram**, export, and save as `user-registration-flowchart.png`.
+
+## Saving to Repository
+
+1. Create directory `flowcharts/` in your repo.
+2. Add this `README.md` and your exported `user-registration-flowchart.png`.
+
