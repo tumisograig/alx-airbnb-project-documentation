@@ -1,0 +1,89 @@
+# Task 3: Design a Data Flow Diagram for Your Features and Functionalities
+
+## Objective
+
+Create a Data Flow Diagram (DFD) that illustrates how data moves through the Airbnb Clone backend, covering key entities, processes, and data stores.
+
+## What to Include
+
+* **External Entities**: Sources or destinations of data (e.g., User, Payment Gateway).
+* **Processes**: Operations on data (e.g., Authenticate User, Search Properties, Process Booking, Handle Payments).
+* **Data Stores**: Where data resides (e.g., User Database, Property Database, Booking Database).
+* **Data Flows**: Arrows showing the movement of data between entities, processes, and data stores.
+
+## Step-by-Step Instructions (Draw\.io)
+
+1. **Open Draw\.io**
+
+   * Go to [https://draw.io](https://draw.io).
+   * Click **Create New Diagram** → **Blank Diagram** → **Create**.
+
+2. **Enable DFD Shapes**
+
+   * Click **More Shapes...** in the left panel.
+   * Under **Software**, check **General** and **DFD**.
+   * Click **Apply**.
+
+3. **Add External Entities**
+
+   * Drag the **DFD External Entity** shape onto the canvas.
+   * Label as **User** and **Payment Gateway**.
+
+4. **Add Processes**
+
+   * Drag the **DFD Process** shape onto the canvas.
+   * Label processes:
+
+     * `Authenticate User`
+     * `Search Properties`
+     * `Create Booking`
+     * `Process Payment`
+     * `Submit Review`
+     * `Send Message`
+
+5. **Add Data Stores**
+
+   * Drag the **DFD Data Store** shape onto the canvas.
+   * Label stores:
+
+     * `User DB`
+     * `Property DB`
+     * `Booking DB`
+     * `Payment DB`
+     * `Review DB`
+     * `Message DB`
+
+6. **Connect Data Flows**
+
+   * Use the **Connector** tool to draw arrows between entities, processes, and stores.
+   * Example flows:
+
+     * User → Authenticate User → User DB
+     * User → Search Properties → Property DB → Search Properties → User
+     * User → Create Booking → Booking DB
+     * Booking DB → Process Payment → Payment DB → Payment Gateway
+     * User → Submit Review → Review DB
+     * User → Send Message → Message DB → User
+
+7. **Arrange & Style**
+
+   * Position external entities on the left/top, processes centrally, and data stores on the right.
+   * Use consistent arrow styles and labels for clarity.
+
+8. **Export as PNG**
+
+   * File → **Export As** → **PNG**.
+   * Check **Include a copy of my diagram**, export, and save as `data-flow.png`.
+
+## Saving to Repository
+
+1. Create directory `data-flow-diagram/` in your repo.
+2. Add this `README.md` and your exported `data-flow.png` inside.
+
+## Commit & Push
+
+```bash
+git add data-flow-diagram/
+git commit -m "Add Data Flow Diagram instructions and PNG"
+git push
+```
